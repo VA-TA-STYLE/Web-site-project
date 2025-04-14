@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-line">
+            <div class="logo">
+                <p>HomeNest</p>
+            </div>
+    
+            <nav class="nav">
+                <a href="#">Find Your Home</a>
+                <a href="#">Mortgage</a>
+                <a href="#">How to Buy</a>
+            </nav>
+    
+        </div>
+        <div class="menu-toggle">  &#9776; </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="photo-mobile">
+                <img class="blur" src="images/main-photo.png" alt="">
+            </div>
+            <div class="main-left">
+                <div class="text-left">
+                    <h1 class="text-main-header">
+                        Find Your Dream  <br>
+                        With Us Today
+                    </h1>
+            
+                    <div class="text-main">
+                        <img src="images/main-icons.png" alt="icon">
+                        <p>Affordable homes starting at $10,000</p>
+                    </div>
+                    <div class="text-main">
+                        <img src="images/main-icons.png" alt="icon">
+                        <p>Mortgage rates starting at 17% for easy financing</p>
+                    </div>
+                    <div class="text-main">
+                        <img src="images/main-icons.png" alt="icon">
+                        <p>Exclusive discounts and offers on selected properties</p>
+                    </div>
+            
+                    <div class="button">
+                        <a class="order-btn" href="#">ORDER</a>
+                    </div>
+                </div>
+        
+             <div class="photo-right">
+                <img class="blur" src="images/main-photo.png" alt="house">
+              </div>
+          </div>
+        </div>
+
+
+        <div class="main-middle">
+            <div class="main-photo-left">
+                <img src="images/middle-photo.png" alt="house">
+            </div>
+                <div class="photo-mobile2">
+                    <img src="images/middle-photo.png" alt="">
+                </div>
+            <div class="main-middle-paragraphs">
+                <div class="main-middle-text">
+                    <img src="images/main-icons-second.png" alt="icons">
+                    <p>Affordable Homes: Focused on affordable housing options tailored to various budgets</p>
+                    
+                </div>
+                
+                <div class="main-middle-text">
+                    <img src="images/main-icons-second.png" alt="icons">
+                    <p>Prime Locations: Emphasized properties in desirable areas with high potential</p>
+                 
+                </div>
+                <div class="main-middle-text">
+                    <img src="images/main-icons-second.png" alt="icons">
+                    <p>Exclusive Offers: Called attention to special discounts and deals on selected properties</p>
+                  
+                </div>
+                <div class="main-middle-text">
+                    <img src="images/main-icons-second.png" alt="icons">
+                    <p>Mortgage Plans: Highlighted the availability of flexible mortgage plans with low rates</p>
+                 
+                </div>
+                <div class="main-middle-button">
+                    <a href="" class="main-middle-btn">ORDER</a>
+                </div>
+            </div>
+
+            <div id="rem-photo" class="main-photo-right">
+                <img src="images/middle-photo.png" alt="house">
+            </div>
+        </div>
+    
+        
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="registration">
+                <form id="myForm" >
+                    <h1> LOGIN</h1>
+
+                    <input type="text" placeholder="Name" class="inputs">
+                    <input type="email" placeholder="E-Mail" class="inputs">
+
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <p>I accept the policy</p>
+                    </div>
+
+                    <button type="submit" class="submit-btn">SUBMIT FORM</button>
+                </form>
+
+                <div class="registration-photo">
+                    <img src="images/registraion-lady.png" alt="registration-lady">
+                </div>
+                
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer-text-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+        </div>
+        <hr>
+
+
+        <div class="footer-social-links">
+            <div class="footer-logo">
+                <p>HomeNest</p>
+            </div>
+
+            <div class="social-photos">
+                <a href="#">
+                    <img src="images/icon-facebook.png" alt="facebook">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-insta.png" alt="instagram">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-linkedIn.png" alt="linkedIn">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-telegram.png" alt="telegram">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-tiktok.png" alt="tiktok">
+                  </a>
+                  <a href="#">
+                    <img src="images/icon-youtube.png" alt="youtube">
+                  </a>
+                  
+            </div>
+
+            <div class="rights">
+                <p>© 2024, Copyright.</p>
+            </div>
+        </div> 
+
+       
+    </footer>
+
+
+</body>
+
+<script>
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();  
+});
+
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+const blurElements = document.querySelectorAll('.blur');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  blurElements.forEach(el => {
+    el.classList.toggle('blurred');
+  });
+});
+
+
+</script>
+</html>
