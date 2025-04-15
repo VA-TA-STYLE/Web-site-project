@@ -7,7 +7,7 @@
 }
 body {
     background-color: rgba(40, 40, 41, 1); 
-
+    padding-top: 70px; 
 }
     /* HEADER */
 
@@ -17,11 +17,18 @@ body {
 }
 
 header {
+    position: fixed;           
+    top: 0;                      
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start ;
-    margin-top: 20px;
+    align-items: flex-start;
+    background-color: rgba(40, 40, 41, 1); 
+    z-index: 1000;            
+    padding: 20px 0;
 }
+
 
 .header-line {
     display: flex;
